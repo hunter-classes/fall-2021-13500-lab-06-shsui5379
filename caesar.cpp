@@ -38,3 +38,19 @@ char shiftChar(char c, int rshift)
 
    return c + rshift;
 }
+
+/**
+ * Encrypts `plaintext` using Caesar cipher
+ * 
+ * @param plaintext  The plaintext to encrypt
+ * @param rshift  The shift
+ * @returns  The encrypted text
+ * */
+std::string encryptCaesar(std::string plaintext, int rshift)
+{
+   for (int i = 0; i < plaintext.length(); i++)
+   {
+      plaintext[i] = shiftChar(plaintext[i], rshift);
+   }
+   return plaintext;
+}
