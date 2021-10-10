@@ -15,3 +15,10 @@ TEST_CASE("Task A: shiftChar")
    CHECK(shiftChar('k', -10) == 'a');
    CHECK(shiftChar('b', -2) == 'z');
 }
+
+TEST_CASE("Task A: encryptCaesar")
+{
+   CHECK(encryptCaesar("Way to Go!", 5) == "Bfd yt Lt!");
+   CHECK(encryptCaesar("", 1) == "");
+   CHECK(encryptCaesar("Bfd yt Lt!", -5) == "Way to Go!");
+}
