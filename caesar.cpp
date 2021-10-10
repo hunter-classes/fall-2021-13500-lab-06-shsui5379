@@ -31,5 +31,10 @@ char shiftChar(char c, int rshift)
       return c + rshift - 26;
    }
 
+   if ((c >= 65 && c + rshift < 65) || (c >= 97 && c + rshift < 97))
+   {
+      return c + rshift + 26;
+   }
+
    return c + rshift;
 }
