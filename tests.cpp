@@ -4,7 +4,7 @@
 #include "caesar.h"
 
 // add your tests here
-TEST_CASE("Task A: shiftChar")
+TEST_CASE("Task B: shiftChar")
 {
    CHECK(shiftChar('W', 5) == 'B');
    CHECK(shiftChar('!', 5) == '!');
@@ -16,7 +16,7 @@ TEST_CASE("Task A: shiftChar")
    CHECK(shiftChar('b', -2) == 'z');
 }
 
-TEST_CASE("Task A: encryptCaesar")
+TEST_CASE("Task B: encryptCaesar")
 {
    CHECK(encryptCaesar("Way to Go!", 5) == "Bfd yt Lt!");
    CHECK(encryptCaesar("", 1) == "");
