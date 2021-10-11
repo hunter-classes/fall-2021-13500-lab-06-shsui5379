@@ -8,7 +8,7 @@
  * */
 
 #include <iostream>
-#include "decryption.h"
+#include "decrypt.h"
 #include "caesar.h"
 
 /**

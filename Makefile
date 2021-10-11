@@ -1,8 +1,8 @@
-main: main.o funcs.o caesar.o vigenere.o decryption.o
-	g++ -o main main.o funcs.o caesar.o vigenere.o decryption.o
+main: main.o funcs.o caesar.o vigenere.o decrypt.o
+	g++ -o main main.o funcs.o caesar.o vigenere.o decrypt.o
 
-tests: tests.o funcs.o caesar.o vigenere.o decryption.o
-	g++ -o tests tests.o funcs.o caesar.o vigenere.o decryption.o
+tests: tests.o funcs.o caesar.o vigenere.o decrypt.o
+	g++ -o tests tests.o funcs.o caesar.o vigenere.o decrypt.o
 
 test-ascii: test-ascii.o
 	g++ -o test-ascii test-ascii.o
@@ -20,7 +20,7 @@ caesar.o: caesar.cpp caesar.h
 
 vigenere.o: vigenere.cpp vigenere.h caesar.h
 
-decryption.o: decryption.cpp decryption.h caesar.h
+decrypt.o: decrypt.cpp decrypt.h caesar.h
 
 clean:
 	rm -f main.o funcs.o tests.o test-ascii.o caesar.o vigenere.o

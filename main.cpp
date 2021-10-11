@@ -2,7 +2,7 @@
 #include "funcs.h"
 #include "caesar.h"
 #include "vigenere.h"
-#include "decryption.h"
+#include "decrypt.h"
 
 int main()
 {
