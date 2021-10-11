@@ -2,6 +2,7 @@
 #include "funcs.h"
 #include "caesar.h"
 #include "vigenere.h"
+#include "decryption.h"
 
 int main()
 {
@@ -18,6 +19,18 @@ int main()
   std::cout << "Plain text: Hello, World!" << std::endl;
   std::cout << "Key: cake\n";
   std::cout << "Encrypted: " << encryptVigenere("Hello, World!", "cake") << std::endl;
+
+  std::cout << "----------------------------------------------------------------\n";
+
+  std::cout << "Task D:\n";
+
+  std::cout << "Encrypted Caesar: Rovvy, Gybvn!\n";
+  std::cout << "Shift: 10\n";
+  std::cout << "Decrypted: " << decryptCaesar("Rovvy, Gybvn!", 10) << "\n\n";
+
+  std::cout << "Encrypted Vigenere: Jevpq, Wyvnd!\n";
+  std::cout << "Key: cake\n";
+  std::cout << "Decrypted: " << decryptVigenere("Jevpq, Wyvnd!", "cake") << std::endl;
 
   return 0;
 }
